@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title align="center">Police registration</title>
+        <link rel="Stylesheet" href="ereg.css">
+
+        <script type="text/javascript">
+            /**/
+            function validate()
+            {
+                var firstname = document.getElementById("firstname");
+                var middlename = document.getElementById("middlename");
+                var lastname = document.getElementById("lastname");
+                var gender = document.getElementById("gender");
+                var mobilenumber = document.getElementById("mobilenumber");
+                var email = document.getElementById("email");
+                var policeId = document.getElementById("policeId");
+                var currentaddress = document.getElementById("currentaddress");
+                var cpin = document.getElementById("cpin");
+                var permanentaddress = document.getElementById("permanentaddress");
+                var ppin = document.getElementById("ppin");
+                var cuserId = document.getElementById("cuserId");
+                var createpassword = document.getElementById("createpassword");
+                var confirmpassword = document.getElementById("confirmpassword");
+            
+                if(firstname.value =="" || middlename.value=="" || lastname.value=="" || gender.value=="" || mobilenumber.value=="" || email.value=="" || policeId.value=="" || currentaddress.value=="" || permanentaddress.value=="" || cpin.value=="" || ppin.value=="" || cuserId.value=="" || createpassword.value=="" || confirmpassword.value=="")
+                {
+                    alert("no blank value allowed");
+                    return false;
+                }
+                else 
+                {
+                    true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="menu">
+            <ul>
+                <li><a href="Crime.html">Home</a></li>
+            </ul>
+        </div>
+    </body>
+    <h2 align="center">Maharastra Police Registration</h2><br><br>
+    <form onsubmit="return validate()" action="#">
+        <label>First name : </label>
+        <input type="text" name="first name" size="15" id="firstname" required><br><br>
+        <label>Middle name : </label>
+        <input type="text" name="Middle name" size="15" id="middlename" required><br><br>
+        <label>Last name : </label>
+        <input type="text" name="Last name" size="15" id="lastname" required><br><br>
+        <label>Gender : </label>
+        <input type="radio" value="Male" name="gender" id="gender" required>Male &nbsp;
+        <input type="radio" value="Female" name="gender" >Female &nbsp;
+        <input type="radio" value="Others" name="gender">Others<br><br>
+        <label>Mobile number : </label>
+        <input type="tel" name="country code" value="+91-" id="mobilenumber" required><br><br>
+        <label>Email Id : </label>
+        <input type="email" placeholder="@gmail.com" size="30" id="email" required><br><br>
+        <label>Police Id : </label>
+        <input type="text" name="Police Id" size="15" id="policeId" required><br><br>
+        <label> Current Address : </label>
+        <textarea cols="50" rows="5" placeholder="current address" value="address" id="currentaddress" required></textarea>&nbsp;
+        <label>Pin Code : </label>
+        <input type="text" name="enter pin" id="cpin" size="8"><br><br>
+        <label> Permanent Address : </label>
+        <textarea cols="50" rows="5" placeholder="Permanent address" value="address" id="permanentaddress" required></textarea>&nbsp;
+        <label>Pin Code : </label>
+        <input type="text" name="enter pin" size="8" id="ppin" required><br><br>
+        <label>Create User Id : </label>
+        <input type="text" name="create user id" size="15" id="cuserId" required><br><br>
+        <label>Create Password : </label>
+        <input type="password" name="create password" size="15" id="createpassword" required><br><br>
+        <label>Confirm Password : </label>
+        <input type="password" name="create password" size="15" id="confirmpassword" required><br><br>
+        
+        <button onclick="validate()" type="submit">Submit</button>
+        
+        
+    </form>
+</html>

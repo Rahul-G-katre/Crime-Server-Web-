@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(home.jpg);
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: #ff7200;
+}
+
+body h1{
+    font-family: Arial;
+    font-weight: bold;
+    color: #fff;
+}
+
+body p{
+    font-family: Arial;
+    font-weight: bold;
+    color: #fff;
+}
